@@ -194,20 +194,20 @@ binarySearchTree :: binarySearchTree(){
 
 int main(){
     binarySearchTree Poopy;
-    int inputArray[100];
+    int inputArray[15];
     ifstream File;
     File.open("pumpkin.txt");
 
     int count;
     File >> count;
 
-    for(int a = 0; a < 100; a++){
+    for(int a = 0; a < 15; a++){
         File >> inputArray[a];
     }
     /*for(int a = 0; a < 10; a++){
         cout << inputArray[a] << endl;;
     }*/
-    Poopy.fromArray(inputArray, 100, Poopy.root);
+    Poopy.fromArray(inputArray, 15, Poopy.root);
     //cout << Poopy.root->data << endl;
     //cout << Poopy.root->right->data << endl;
     //cout << Poopy.root->left->data << endl;
