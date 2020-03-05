@@ -57,14 +57,14 @@ struct binarySearchTree{
     }
     void deleteIter(int value, node* root){
         node* parent = NULL;
-        node* current = root;
-        while(current->data != value){
-            parent = current;
-            if(current->data < value){
-                current = current->right;
+        //node* current = root;
+        while(root->data != value){
+            parent = root;
+            if(root->data < value){
+                root = root->right;
             }
             else{
-                current = current->left;
+                root = root->left;
             }
         }
     
